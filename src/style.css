@@ -1,3 +1,91 @@
-.header {
-    background-color: black;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+nav{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.navbar{
+    max-width: 100%;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.navbar ul{
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 28px;
+}
+
+.navbar li{
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+
+.headerlogo img{
+    width: 183px;
+    height: 185px;
+    position: absolute;
+    top: auto;
+}
+
+.kobeBg img{
+    max-width: 1920px;
+    width: 100%;
+    max-height: 1080px;
+    height: 100%;
+    object-fit: fill;
+}
+
+.container{
+    background-color: #0F0E0E;
+    opacity: 0.70;
+    display: block;
+    max-width: 600px;
+    width: 40%;
+    padding-left: 15px;
+    height: 300px;
+    position: absolute;
+    top: 602px;
+    left: 100px;
+}
+
+.container-items h2{
+    padding:12px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container-items p{
+    color: #fff;
+    padding-top: 30px;
 }
